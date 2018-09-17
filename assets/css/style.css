@@ -1,0 +1,42 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.jumbotron hr{
+	display: block;
+	height: 2px;
+	margin: 1em 0;
+}
+
+.jumbotron {
+	background-color: transparent;
+	background: url(../images/bg-landing.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	padding-top: 25vh;
+	padding-bottom: 25vh;
+	margin-bottom: 0;
+}
+
+.jumbotron h1 {
+		color: #E9E9E9;
+		letter-spacing: 3px;
+}
+
+#jumbotron-landing {
+	background-color: #141414;
+	margin: 0 auto;
+}
+
+#landing-button {
+	font-weight: 700;
+}
+
+#landing-button:hover {
+	color: #141414;
+	font-weight: 700;
+}
