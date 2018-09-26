@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .jumbotron {
 	background-color: transparent;
 	background: url(../images/landing/bg-landing.jpg);
@@ -189,13 +193,6 @@
 	opacity: 0.4;
 }
 
-#inputholder:hover::after {
-	content: attr(title);
-	position:absolute;
-	left: 40%;
-	top: 50%;
-}
-
 .gallery-img {
 	height: 15rem;
 	width: 100%;
@@ -211,19 +208,6 @@
 	font-size: 4em;
 }
 
-.offset-middd {
-	margin-left: 4.1666665%;
-	margin-right: 4.1666665%;
-}
-
-.offset-ryt {
-	margin-right: 8.333333%;
-}
-
-.hide-vid {
-	display: none;
-}
-
 input:focus{
     outline: none;
 }
@@ -231,13 +215,17 @@ input:focus{
 .daniel-imgmove {
 	object-position: left;
 }
-/*---------------END OF GALLERY-------------*/
 
-.a-circle {
-	height: 6rem;
-	width: 100%;
-	border-radius: 100%;
+.offset-middd {
+	margin-left: 4.1666665%;
+	margin-right: 4.1666665%;
+	}
+
+.offset-ryt {
+	margin-right: 8.333333%;
 }
+
+/*---------------END OF GALLERY-------------*/
 
 .img-meee {
 	height: 15rem;
@@ -275,16 +263,12 @@ input:focus{
 	color: #6cc644;
 }
 
-.fa-youtube:hover {
-	color: #ff0000;
+.fa-soundcloud:hover {
+	color: #ff7700;
 }
 
 .c-contact {
 	background: #1a1a1a;
-}
-
-.c-contacttitle {
-	color: #000000;
 }
 
 .c-artisttitle {
@@ -296,9 +280,44 @@ input:focus{
 	color: #4bead1;
 }
 
-.active {
-	text-decoration: underline; 
+.cont-round {
+	height: 100%;
+	width: 100%;
+	border: 2px solid #333;/
+	margin-left: 15%;
 }
+
+.anc-tomid {
+	margin-top: 20%;
+}
+
+.contacttitle {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1rem;
+	font-weight: 700;
+	margin-top: 10%;
+}
+
+.bot-ctitle {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.5rem;
+}
+
+.cont-round:hover {
+	color: #333;
+	background: #4bead1;
+}
+
+.text-touch {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 3rem;
+}
+
+.active {
+	text-decoration: underline;
+}
+
 /*--------------END OF CONTACT-----------*/
 
 .bg-foot {
@@ -314,6 +333,21 @@ input:focus{
 
 
 /*-----------------------------------RESPONSIVENESSSS-----------------------*/
+
+@media only screen and (min-width: 961px) {
+	
+	.vbot-hubsc1 {
+		margin-left: 25%;
+		margin-top: 2%;
+	}
+
+	.vbot-hubsc2 {
+		margin-top: 2%;
+	}
+
+}
+
+
 /*Tablet*/
 @media only screen and (min-width: 401px) and (max-width: 960px) {
 	.c-text {
@@ -340,6 +374,15 @@ input:focus{
 		margin-top: 2rem;
 		text-align: center;
 	}
+
+	.nav-link {
+		text-align: center;
+	}
+
+	.tabvcont-bot2 {
+		margin-top: 5%;
+	}
+
 }
 
 /*Mobile*/
@@ -367,6 +410,23 @@ input:focus{
 		margin-left: 0;
 		margin-top: 2rem;
 		text-align: center;
+	}
+
+	.nav-link {
+		text-align: center;
+	}
+
+	.move-vcp {
+		margin-left: 25%;
+		margin-top: 5%;
+	}
+
+	.mg-tp {
+		margin-top: 5%;
+	}
+
+	.move-ayasa {
+		margin-left: 25%;
 	}
 
 }

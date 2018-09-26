@@ -40,23 +40,23 @@
 <body class="pt-5">
 
   	<nav class="navbar navbar-expand-lg navbar-light bgc-nav fixed-top">
-	  <a class="navbar-brand" href="#">Vivace <strong>Music</strong></a>
+	  <a class="navbar-brand" href="home.html">Vivace <strong>Music</strong></a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
 	  <div class="collapse navbar-collapse" id="navbarText">
 	    <ul class="navbar-nav mr-auto font-ulmenu">
-	      <li class="nav-item ml-5">
-	        <a class="nav-link c-menu" href="home.html">Home <span class="sr-only">(current)</span></a>
+	      <li class="nav-item">
+	        <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
 	      </li>
-	      <li class="nav-item ml-5">
-	        <a class="nav-link c-menu" href="about.html">About</a>
+	      <li class="nav-item">
+	        <a class="nav-link" href="about.html">About</a>
 	      </li>
-	      <li class="nav-item active ml-5">
-	        <a class="nav-link c-menu" href="gallery.html">Gallery</a>
+	      <li class="nav-item active">
+	        <a class="nav-link" href="gallery.html">Gallery</a>
 	      </li>
-	      <li class="nav-item ml-5">
-	        <a class="nav-link c-menu" href="contact.html">Contact</a>
+	      <li class="nav-item">
+	        <a class="nav-link" href="contact.html">Contact</a>
 	      </li>
 	    </ul>
 	    <span class="c-text mr-5">
@@ -71,29 +71,91 @@
 				<h1 class="text-center gallery-title"><span id="str-music">Guitar</span> covers</h1>
 			</div>
 
-			<div class="col-lg-3 offset-lg-1">
-					<input type="image" class="card-img-top gallery-img artist-hov js-togbtn" src="assets/images/about/james.jpg" alt="James guitar" title="Click me" id="inputholder">
-				
-				<div class="embed-responsive embed-responsive-16by9 hide-vid js-togshow">
-					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/V3cEhbO9Kv8" allowfullscreen></iframe>
-				</div>	
+			<div class="col-lg-3 offset-lg-1 col-md-3 offset-md-1">
+					
+				<input type="image" class="card-img-top gallery-img artist-hov" src="assets/images/about/james.jpg" alt="James guitar" title="James guitar cover" data-toggle="modal" data-target="#jamesmodal">
+
+
+				<div class="modal fade" id="jamesmodal" tabindex="-1" role="dialog" aria-labelledby="jamesmodallabel" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					    	<div class="modal-header">
+					    		<h5 class="modal-title" id="jamesmodallabel">James Bartholomew</h5>
+					        	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          	<span aria-hidden="true">&times;</span>
+					        	</button>
+					      	</div>
+					    	<div class="modal-body">
+								<div class="embed-responsive embed-responsive-16by9">
+									<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/V3cEhbO9Kv8" allowfullscreen></iframe>
+								</div>
+						  	</div> <!-- end modal body -->
+
+						  	<div class="modal-footer">
+					        	<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					     	</div> <!-- end modal footer -->
+
+					  </div> <!-- end modal content -->
+					</div> <!-- end modal dialog -->
+				</div>	<!-- end modal -->
 
 			</div> <!-- end of 1st artist col  -->
 
-			<div class="col-lg-3 offset-middd">
-				<input type="image" class="card-img-top gallery-img artist-hov js-togbtn" src="assets/images/about/sungha.jpg" alt="Sungha guitar" title="Click me" id="inputholder">
+			<div class="col-lg-3 offset-middd col-md-3">
+				<input type="image" class="card-img-top gallery-img artist-hov" src="assets/images/about/sungha.jpg" alt="Sungha guitar" title="Sungha guitar cover" data-toggle="modal" data-target="#sunghamodal">
 				
-				<div class="embed-responsive embed-responsive-16by9 hide-vid js-togshow">
-					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OzlbjQZlMt0" allowfullscreen></iframe>
-				</div>
+				<div class="modal fade" id="sunghamodal" tabindex="-1" role="dialog" aria-labelledby="sunghamodallabel" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					    	<div class="modal-header">
+					    		<h5 class="modal-title" id="sunghamodallabel">Sungha Jung</h5>
+					        	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          	<span aria-hidden="true">&times;</span>
+					        	</button>
+					      	</div>
+					    	<div class="modal-body">
+								<div class="embed-responsive embed-responsive-16by9">
+									<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OzlbjQZlMt0" allowfullscreen></iframe>
+								</div>
+							</div> <!-- end modal body -->
+
+							<div class="modal-footer">
+					        	<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					     	</div> <!-- end modal footer -->
+
+					    </div> <!-- end modal content -->
+					</div> <!-- end modal dialog -->
+				</div>	<!-- end 2nd modal -->
+
 			</div> <!-- end of 2nd artist col  -->
 
-			<div class="col-lg-3 offset-ryt">
-				<input type="image" class="card-img-top gallery-img artist-hov js-togbtn" src="assets/images/about/yuki.jpg" alt="Yuki guitar" title="Click me" id="inputholder">
+			<div class="col-lg-3 offset-ryt col-md-3">
+				<input type="image" class="card-img-top gallery-img artist-hov" src="assets/images/about/yuki.jpg" alt="Yuki guitar" title="Yuki guitar cover" data-toggle="modal" data-target="#yukimodal">
 				
-				<div class="embed-responsive embed-responsive-16by9 hide-vid js-togshow">
-					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2ceSewoDfJc" allowfullscreen></iframe>
-				</div>
+
+				<div class="modal fade" id="yukimodal" tabindex="-1" role="dialog" aria-labelledby="yukimodallabel" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					    	<div class="modal-header">
+					    		<h5 class="modal-title" id="yukimodallabel">Yuki Matsui</h5>
+					        	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          	<span aria-hidden="true">&times;</span>
+					        	</button>
+					      	</div>
+					    	<div class="modal-body">
+								<div class="embed-responsive embed-responsive-16by9">
+									<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2ceSewoDfJc" allowfullscreen></iframe>
+								</div>
+							</div> <!-- end modal body -->
+
+							<div class="modal-footer">
+					        	<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					     	</div> <!-- end modal footer -->
+
+					    </div> <!-- end modal content -->
+					</div> <!-- end modal dialog -->
+				</div>	<!-- end 3rd modal -->
+
 			</div> <!-- end of 3rd artist col  -->
 		</div> <!-- end of 1st row title -->
 	</div> <!-- end of container -->
@@ -104,28 +166,88 @@
 				<h1 class="text-center gallery-title"><span id="str-music">Piano</span> covers</h1>
 			</div>
 
-			<div class="col-lg-3 offset-lg-1">
-				<input type="image" class="card-img-top gallery-img artist-hov js-togbtn" src="assets/images/about/consta.jpg" alt="Costantino piano" title="Click me" id="inputholder">
+			<div class="col-lg-3 offset-lg-1 col-md-3 offset-md-1">
+				<input type="image" class="card-img-top gallery-img artist-hov" src="assets/images/about/consta.jpg" alt="Costantino piano" title="Costantino piano cover" data-toggle="modal" data-target="#costantinomodal">
 				
-				<div class="embed-responsive embed-responsive-16by9 hide-vid js-togshow">
-					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NUdlh5NYx2o" allowfullscreen></iframe>
-				</div>	
+
+				<div class="modal fade" id="costantinomodal" tabindex="-1" role="dialog" aria-labelledby="costantinomodallabel" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					    	<div class="modal-header">
+					    		<h5 class="modal-title" id="costantinomodallabel">Costantino Carrara</h5>
+					        	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          	<span aria-hidden="true">&times;</span>
+					        	</button>
+					      	</div>
+					    	<div class="modal-body">
+								<div class="embed-responsive embed-responsive-16by9">
+									<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NUdlh5NYx2o" allowfullscreen></iframe>
+								</div>
+							</div> <!-- end modal body -->
+
+							<div class="modal-footer">
+					        	<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					     	</div> <!-- end modal footer -->
+
+					    </div> <!-- end modal content -->
+					</div> <!-- end modal dialog -->
+				</div>	<!-- end 4th modal -->	
 			</div> <!-- end of 1st artist col  -->
 
-			<div class="col-lg-3 offset-middd">
-				<input type="image" class="card-img-top gallery-img artist-hov js-togbtn" src="assets/images/about/animenz.jpg" alt="Animenz piano" title="Click me" id="inputholder">
+			<div class="col-lg-3 offset-middd col-md-3">
+				<input type="image" class="card-img-top gallery-img artist-hov" src="assets/images/about/animenz.jpg" alt="Animenz piano" title="Animenz piano cover" data-toggle="modal" data-target="#animenzmodal">
 				
-				<div class="embed-responsive embed-responsive-16by9 hide-vid js-togshow">
-					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zsVAbS8xmaU" allowfullscreen></iframe>
-				</div>
+
+				<div class="modal fade" id="animenzmodal" tabindex="-1" role="dialog" aria-labelledby="animenzmodallabel" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					    	<div class="modal-header">
+					    		<h5 class="modal-title" id="animenzmodallabel">Animenz</h5>
+					        	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          	<span aria-hidden="true">&times;</span>
+					        	</button>
+					      	</div>
+					    	<div class="modal-body">
+								<div class="embed-responsive embed-responsive-16by9">
+									<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zsVAbS8xmaU" allowfullscreen></iframe>
+								</div>
+							</div> <!-- end modal body -->
+
+							<div class="modal-footer">
+					        	<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					     	</div> <!-- end modal footer -->
+
+					    </div> <!-- end modal content -->
+					</div> <!-- end modal dialog -->
+				</div>	<!-- end 5th modal -->
 			</div> <!-- end of 2nd artist col  -->
 
-			<div class="col-lg-3 offset-ryt">
-				<input type="image" class="card-img-top gallery-img artist-hov js-togbtn" src="assets/images/about/theishter.jpg" alt="Theishter piano" title="Click me" id="inputholder">
+			<div class="col-lg-3 offset-ryt col-md-3">
+				<input type="image" class="card-img-top gallery-img artist-hov" src="assets/images/about/theishter.jpg" alt="Theishter piano" title="Theishter piano cover" data-toggle="modal" data-target="#theishtermodal">
 				
-				<div class="embed-responsive embed-responsive-16by9 hide-vid js-togshow">
-					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VG5uO6B1S3E" allowfullscreen></iframe>
-				</div>
+
+				<div class="modal fade" id="theishtermodal" tabindex="-1" role="dialog" aria-labelledby="theishtermodallabel" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					    	<div class="modal-header">
+					    		<h5 class="modal-title" id="theishtermodallabel">Theishter</h5>
+					        	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          	<span aria-hidden="true">&times;</span>
+					        	</button>
+					      	</div>
+					    	<div class="modal-body">
+								<div class="embed-responsive embed-responsive-16by9">
+									<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VG5uO6B1S3E" allowfullscreen></iframe>
+								</div>
+							</div> <!-- end modal body -->
+
+							<div class="modal-footer">
+					        	<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					     	</div> <!-- end modal footer -->
+
+					    </div> <!-- end modal content -->
+					</div> <!-- end modal dialog -->
+				</div>	<!-- end 6th modal -->
 			</div> <!-- end of 3rd artist col  -->
 		</div> <!-- end of 1st row title -->
 	</div> <!-- end of container -->
@@ -136,28 +258,86 @@
 				<h1 class="text-center gallery-title"><span id="str-music">Violin</span> covers</h1>
 			</div>
 
-			<div class="col-lg-3 offset-lg-1">
-				<input type="image" class="card-img-top gallery-img artist-hov js-togbtn daniel-imgmove" src="assets/images/about/daniel.jpg" alt="Daniel violin" title="Click me" id="inputholder">
+			<div class="col-lg-3 offset-lg-1 col-md-3 offset-md-1">
+				<input type="image" class="card-img-top gallery-img artist-hov daniel-imgmove" src="assets/images/about/daniel.jpg" alt="Daniel violin" title="Daniel violin cover" data-toggle="modal" data-target="#danielmodal">
 				
-				<div class="embed-responsive embed-responsive-16by9 hide-vid js-togshow">
-					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LZrOfcTPJaA" allowfullscreen></iframe>
-				</div>	
+
+				<div class="modal fade" id="danielmodal" tabindex="-1" role="dialog" aria-labelledby="danielmodallabel" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					    	<div class="modal-header">
+					    		<h5 class="modal-title" id="daanielmodallabel">Daniel Jang</h5>
+					        	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          	<span aria-hidden="true">&times;</span>
+					        	</button>
+					      	</div>
+					    	<div class="modal-body">
+								<div class="embed-responsive embed-responsive-16by9">
+									<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LZrOfcTPJaA" allowfullscreen></iframe>
+								</div>
+							</div> <!-- end modal body -->
+
+							<div class="modal-footer">
+					        	<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					     	</div> <!-- end modal footer -->
+
+					    </div> <!-- end modal content -->
+					</div> <!-- end modal dialog -->
+				</div>	<!-- end 7th modal -->	
 			</div> <!-- end of 1st artist col  -->
 
-			<div class="col-lg-3 offset-middd">
-				<input type="image" class="card-img-top gallery-img artist-hov js-togbtn" src="assets/images/about/andre.jpg" alt="Andre violin" title="Click me" id="inputholder">
+			<div class="col-lg-3 offset-middd col-md-3">
+				<input type="image" class="card-img-top gallery-img artist-hov" src="assets/images/about/andre.jpg" alt="Andre violin" title="Andre violin cover" data-toggle="modal" data-target="#andremodal">
 				
-				<div class="embed-responsive embed-responsive-16by9 hide-vid js-togshow">
-					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/rVHSP92qLeU" allowfullscreen></iframe>
-				</div>
+				<div class="modal fade" id="andremodal" tabindex="-1" role="dialog" aria-labelledby="andremodallabel" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					    	<div class="modal-header">
+					    		<h5 class="modal-title" id="andremodallabel">Andre Soueid</h5>
+					        	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          	<span aria-hidden="true">&times;</span>
+					        	</button>
+					      	</div>
+					    	<div class="modal-body">
+								<div class="embed-responsive embed-responsive-16by9">
+									<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/rVHSP92qLeU" allowfullscreen></iframe>
+								</div>
+							</div> <!-- end modal body -->
+
+							<div class="modal-footer">
+					        	<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					     	</div> <!-- end modal footer -->
+
+					    </div> <!-- end modal content -->
+					</div> <!-- end modal dialog -->
+				</div>	<!-- end 8th modal -->	
 			</div> <!-- end of 2nd artist col  -->
 
-			<div class="col-lg-3 offset-ryt">
-				<input type="image" class="card-img-top gallery-img artist-hov js-togbtn" src="assets/images/about/ayasa.jpg" alt="Ayasa violin" title="Click me" id="inputholder">
+			<div class="col-lg-3 offset-ryt col-md-3">
+				<input type="image" class="card-img-top gallery-img artist-hov" src="assets/images/about/ayasa.jpg" alt="Ayasa violin" title="Ayasa violin cover" data-toggle="modal" data-target="#ayasamodal">
 				
-				<div class="embed-responsive embed-responsive-16by9 hide-vid js-togshow">
-					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ixiflEnZy9I" allowfullscreen></iframe>
-				</div>
+				<div class="modal fade" id="ayasamodal" tabindex="-1" role="dialog" aria-labelledby="ayasamodallabel" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					    	<div class="modal-header">
+					    		<h5 class="modal-title" id="ayasamodallabel">Shimamura "Ayasa" Ayase</h5>
+					        	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          	<span aria-hidden="true">&times;</span>
+					        	</button>
+					      	</div>
+					    	<div class="modal-body">
+								<div class="embed-responsive embed-responsive-16by9">
+									<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ixiflEnZy9I" allowfullscreen></iframe>
+								</div>
+							</div> <!-- end modal body -->
+
+							<div class="modal-footer">
+					        	<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					     	</div> <!-- end modal footer -->
+
+					    </div> <!-- end modal content -->
+					</div> <!-- end modal dialog -->
+				</div>	<!-- end 9th modal -->	
 			</div> <!-- end of 3rd artist col  -->
 		</div> <!-- end of 1st row title -->
 	</div> <!-- end of container -->
@@ -171,15 +351,6 @@
 		</div>
 	</div> <!-- end of footer -->
 
-	<!-- video script -->
-	<script>
-	$(document).ready(function(){
-	    $("input").click(function(){
-/*	    	$(".js-togshow").hide();*/
-	        $(this).next(".js-togshow").fadeToggle(1000);
-	    });
-	});
-	</script>
 
 </body>
 </html>
